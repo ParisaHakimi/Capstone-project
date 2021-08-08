@@ -1,0 +1,966 @@
+body {
+    background-image: linear-gradient(to right, #fec89a, #fcd2af, #f9dcc4, #f9e5d8, #f8edeb);
+    font-family: 'Roboto', sans-serif;
+    color: #424242;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+.second-font-family {
+    font-family: 'Indie Flower', cursive;
+}
+
+
+/* nav section */
+
+nav {
+    justify-content: space-between;
+}
+
+nav a {
+    display: block;
+    padding: .5rem 1rem;
+    text-decoration: none;
+}
+
+nav a h1 {
+    font-size: 1.7rem;
+    transition: 1s;
+}
+
+nav a h1,
+#menu li a {
+    color: #424242;
+}
+
+#menu li a span {
+    border-left: 2px solid #424242;
+    padding: 1px 10px;
+    transition: 1s;
+}
+
+#menu li:first-child a span {
+    border-left: none;
+}
+
+#menu li a:hover span,
+nav a:hover h1 {
+    color: #006466;
+    border-left-color: #006466;
+    letter-spacing: 1px;
+}
+
+
+/* index-page carousel section */
+
+.carousel-item {
+    height: 80vh;
+}
+
+#carouselIndicators {
+    margin-top: 50px;
+}
+
+.carousel-control-prev-icon {
+    padding: 10px;
+    width: 10px;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    background-color: rgba(0, 0, 0, 0.39);
+}
+
+
+/* index-page responsive */
+
+@media screen and (max-width:1023px) {
+    #carouselIndicators {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:990px) {
+    #carouselIndicators {
+        margin-top: 70px;
+    }
+    .carousel-indicators {
+        bottom: 100px;
+    }
+    .carousel-control-next,
+    .carousel-control-prev {
+        height: 70vh;
+    }
+}
+
+@media screen and (max-width:767px) {
+    #carouselIndicators {
+        margin-top: 100px;
+    }
+    .carousel-indicators {
+        bottom: 170px;
+    }
+    .carousel-item img {
+        height: 55vh;
+    }
+    .navbar-nav {
+        display: flex;
+        align-items: flex-end;
+    }
+    #menu li a span {
+        border: none;
+    }
+    #menu li a {
+        padding: 0;
+    }
+    .carousel-control-next,
+    .carousel-control-prev {
+        height: 55vh;
+    }
+}
+
+@media screen and (max-width:424px) {
+    .carousel-indicators {
+        bottom: 10px;
+    }
+    .carousel-item img {
+        height: 80vh;
+    }
+}
+
+
+/* about-me page */
+
+
+/* about-me left side */
+
+.about-me-inner {
+    margin-top: 50px;
+}
+
+.left-top {
+    height: 40vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-top .my-image img {
+    height: 40vh;
+}
+
+.img-thumbnail {
+    background-color: #f9dcc4;
+}
+
+.left-bottom {
+    height: 50vh;
+}
+
+.left-bottom h2:after {
+    content: "";
+    animation: text 20s infinite linear;
+    font-family: 'Indie Flower', cursive;
+}
+
+.right h3 {
+    display: none;
+}
+
+@keyframes text {
+    0% {
+        opacity: 0;
+        content: "";
+    }
+    10% {
+        content: "P";
+        opacity: 1;
+    }
+    11% {
+        opacity: 1;
+        content: "Pa";
+    }
+    12% {
+        opacity: 1;
+        content: "Par";
+    }
+    13% {
+        content: "Pari";
+        opacity: 1;
+    }
+    14% {
+        content: "Paris";
+        opacity: 1;
+    }
+    15% {
+        opacity: 1;
+        content: "Parisa";
+    }
+    16% {
+        opacity: 1;
+        content: "Parisa H";
+    }
+    17% {
+        opacity: 1;
+        content: "Parisa Ha";
+    }
+    18% {
+        opacity: 1;
+        content: "Parisa Hak";
+    }
+    19% {
+        opacity: 1;
+        content: "Parisa Haki";
+    }
+    20% {
+        opacity: 1;
+        content: "Parisa Hakim";
+    }
+    21% {
+        opacity: 1;
+        content: "Parisa Hakimi";
+    }
+    30% {
+        opacity: 1;
+        content: "Parisa Hakim";
+    }
+    31% {
+        opacity: 1;
+        content: "Parisa Haki";
+    }
+    32% {
+        opacity: 1;
+        content: "Parisa Hak";
+    }
+    33% {
+        opacity: 1;
+        content: "Parisa Ha";
+    }
+    34% {
+        opacity: 1;
+        content: "Parisa H";
+    }
+    35% {
+        opacity: 1;
+        content: "Parisa ";
+    }
+    36% {
+        opacity: 1;
+        content: "Paris";
+    }
+    37% {
+        opacity: 1;
+        content: "Pari";
+    }
+    38% {
+        opacity: 1;
+        content: "Par";
+    }
+    39% {
+        opacity: 1;
+        content: "Pa";
+    }
+    40% {
+        opacity: 1;
+        content: "P";
+    }
+    42% {
+        opacity: 0;
+        content: "";
+    }
+    53% {
+        opacity: 1;
+        content: "F";
+    }
+    54% {
+        opacity: 1;
+        content: "Fr";
+    }
+    55% {
+        opacity: 1;
+        content: "Fro";
+    }
+    56% {
+        opacity: 1;
+        content: "Fron";
+    }
+    57% {
+        opacity: 1;
+        content: "Front";
+    }
+    58% {
+        opacity: 1;
+        content: "FrontE";
+    }
+    59% {
+        opacity: 1;
+        content: "FrontEn";
+    }
+    60% {
+        opacity: 1;
+        content: "FrontEnd";
+    }
+    61% {
+        opacity: 1;
+        content: "FrontEnd W";
+    }
+    62% {
+        opacity: 1;
+        content: "FrontEnd We";
+    }
+    63% {
+        opacity: 1;
+        content: "FrontEnd Web";
+    }
+    64% {
+        opacity: 1;
+        content: "FrontEnd Web D";
+    }
+    65% {
+        opacity: 1;
+        content: "FrontEnd Web De";
+    }
+    66% {
+        opacity: 1;
+        content: "FrontEnd Web Dev";
+    }
+    67% {
+        opacity: 1;
+        content: "FrontEnd Web Deve";
+    }
+    68% {
+        opacity: 1;
+        content: "FrontEnd Web Devel";
+    }
+    69% {
+        opacity: 1;
+        content: "FrontEnd Web Develo";
+    }
+    70% {
+        opacity: 1;
+        content: "FrontEnd Web Develop";
+    }
+    71% {
+        opacity: 1;
+        content: "FrontEnd Web Develope";
+    }
+    72% {
+        opacity: 1;
+        content: "FrontEnd Web Developer";
+    }
+    81% {
+        opacity: 1;
+        content: "FrontEnd Web Develope";
+    }
+    82% {
+        opacity: 1;
+        content: "FrontEnd Web Develop";
+    }
+    83% {
+        opacity: 1;
+        content: "FrontEnd Web Develo";
+    }
+    84% {
+        opacity: 1;
+        content: "FrontEnd Web Devel";
+    }
+    85% {
+        opacity: 1;
+        content: "FrontEnd Web Deve";
+    }
+    86% {
+        opacity: 1;
+        content: "FrontEnd Web Dev";
+    }
+    87% {
+        opacity: 1;
+        content: "FrontEnd Web De";
+    }
+    88% {
+        opacity: 1;
+        content: "FrontEnd Web D";
+    }
+    89% {
+        opacity: 1;
+        content: "FrontEnd Web ";
+    }
+    90% {
+        opacity: 1;
+        content: "FrontEnd We";
+    }
+    91% {
+        opacity: 1;
+        content: "FrontEnd W";
+    }
+    92% {
+        opacity: 1;
+        content: "FrontEnd ";
+    }
+    93% {
+        opacity: 1;
+        content: "FrontEn";
+    }
+    94% {
+        opacity: 1;
+        content: "FrontE";
+    }
+    95% {
+        opacity: 1;
+        content: "Front";
+    }
+    96% {
+        opacity: 1;
+        content: "Fron";
+    }
+    97% {
+        opacity: 1;
+        content: "Fro";
+    }
+    98% {
+        opacity: 1;
+        content: "Fr";
+    }
+    99% {
+        opacity: 1;
+        content: "F";
+    }
+    100% {
+        opacity: 1;
+        content: "";
+    }
+}
+
+
+/* about-me right side */
+
+.right {
+    height: 90vh;
+}
+
+.right h2 {
+    margin-top: 2%;
+}
+
+
+/* responsive  */
+
+@media screen and (min-width:992px) and (max-width:1199px) {
+    .left-bottom h2 {
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+    .left-bottom h2 {
+        font-size: 1.3rem;
+    }
+    .right h2 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .navbar {
+        padding: 5%;
+    }
+    .about-me-inner {
+        margin-top: 0;
+    }
+    .left-bottom {
+        height: 48vh;
+    }
+    .left-bottom h2 {
+        font-size: 1.7rem;
+    }
+    .left {
+        height: 40vh;
+    }
+    .right h2 {
+        margin-top: 0;
+        font-size: 1.7rem;
+        padding: 2rem 0;
+    }
+    .right h3 {
+        display: block;
+        font-size: 1.4rem;
+    }
+    .right h3:after {
+        content: "";
+        animation: text2 20s infinite linear;
+        font-family: 'Indie Flower', cursive;
+    }
+    @keyframes text2 {
+        0% {
+            opacity: 0;
+            content: "";
+        }
+        10% {
+            content: "P";
+            opacity: 1;
+        }
+        11% {
+            opacity: 1;
+            content: "Pa";
+        }
+        12% {
+            opacity: 1;
+            content: "Par";
+        }
+        13% {
+            content: "Pari";
+            opacity: 1;
+        }
+        14% {
+            content: "Paris";
+            opacity: 1;
+        }
+        15% {
+            opacity: 1;
+            content: "Parisa";
+        }
+        16% {
+            opacity: 1;
+            content: "Parisa H";
+        }
+        17% {
+            opacity: 1;
+            content: "Parisa Ha";
+        }
+        18% {
+            opacity: 1;
+            content: "Parisa Hak";
+        }
+        19% {
+            opacity: 1;
+            content: "Parisa Haki";
+        }
+        20% {
+            opacity: 1;
+            content: "Parisa Hakim";
+        }
+        21% {
+            opacity: 1;
+            content: "Parisa Hakimi";
+        }
+        30% {
+            opacity: 1;
+            content: "Parisa Hakim";
+        }
+        31% {
+            opacity: 1;
+            content: "Parisa Haki";
+        }
+        32% {
+            opacity: 1;
+            content: "Parisa Hak";
+        }
+        33% {
+            opacity: 1;
+            content: "Parisa Ha";
+        }
+        34% {
+            opacity: 1;
+            content: "Parisa H";
+        }
+        35% {
+            opacity: 1;
+            content: "Parisa ";
+        }
+        36% {
+            opacity: 1;
+            content: "Paris";
+        }
+        37% {
+            opacity: 1;
+            content: "Pari";
+        }
+        38% {
+            opacity: 1;
+            content: "Par";
+        }
+        39% {
+            opacity: 1;
+            content: "Pa";
+        }
+        40% {
+            opacity: 1;
+            content: "P";
+        }
+        42% {
+            opacity: 0;
+            content: "";
+        }
+        53% {
+            opacity: 1;
+            content: "F";
+        }
+        54% {
+            opacity: 1;
+            content: "Fr";
+        }
+        55% {
+            opacity: 1;
+            content: "Fro";
+        }
+        56% {
+            opacity: 1;
+            content: "Fron";
+        }
+        57% {
+            opacity: 1;
+            content: "Front";
+        }
+        58% {
+            opacity: 1;
+            content: "FrontE";
+        }
+        59% {
+            opacity: 1;
+            content: "FrontEn";
+        }
+        60% {
+            opacity: 1;
+            content: "FrontEnd";
+        }
+        61% {
+            opacity: 1;
+            content: "FrontEnd W";
+        }
+        62% {
+            opacity: 1;
+            content: "FrontEnd We";
+        }
+        63% {
+            opacity: 1;
+            content: "FrontEnd Web";
+        }
+        64% {
+            opacity: 1;
+            content: "FrontEnd Web D";
+        }
+        65% {
+            opacity: 1;
+            content: "FrontEnd Web De";
+        }
+        66% {
+            opacity: 1;
+            content: "FrontEnd Web Dev";
+        }
+        67% {
+            opacity: 1;
+            content: "FrontEnd Web Deve";
+        }
+        68% {
+            opacity: 1;
+            content: "FrontEnd Web Devel";
+        }
+        69% {
+            opacity: 1;
+            content: "FrontEnd Web Develo";
+        }
+        70% {
+            opacity: 1;
+            content: "FrontEnd Web Develop";
+        }
+        71% {
+            opacity: 1;
+            content: "FrontEnd Web Develope";
+        }
+        72% {
+            opacity: 1;
+            content: "FrontEnd Web Developer";
+        }
+        81% {
+            opacity: 1;
+            content: "FrontEnd Web Develope";
+        }
+        82% {
+            opacity: 1;
+            content: "FrontEnd Web Develop";
+        }
+        83% {
+            opacity: 1;
+            content: "FrontEnd Web Develo";
+        }
+        84% {
+            opacity: 1;
+            content: "FrontEnd Web Devel";
+        }
+        85% {
+            opacity: 1;
+            content: "FrontEnd Web Deve";
+        }
+        86% {
+            opacity: 1;
+            content: "FrontEnd Web Dev";
+        }
+        87% {
+            opacity: 1;
+            content: "FrontEnd Web De";
+        }
+        88% {
+            opacity: 1;
+            content: "FrontEnd Web D";
+        }
+        89% {
+            opacity: 1;
+            content: "FrontEnd Web ";
+        }
+        90% {
+            opacity: 1;
+            content: "FrontEnd We";
+        }
+        91% {
+            opacity: 1;
+            content: "FrontEnd W";
+        }
+        92% {
+            opacity: 1;
+            content: "FrontEnd ";
+        }
+        93% {
+            opacity: 1;
+            content: "FrontEn";
+        }
+        94% {
+            opacity: 1;
+            content: "FrontE";
+        }
+        95% {
+            opacity: 1;
+            content: "Front";
+        }
+        96% {
+            opacity: 1;
+            content: "Fron";
+        }
+        97% {
+            opacity: 1;
+            content: "Fro";
+        }
+        98% {
+            opacity: 1;
+            content: "Fr";
+        }
+        99% {
+            opacity: 1;
+            content: "F";
+        }
+        100% {
+            opacity: 1;
+            content: "";
+        }
+    }
+    .right .pt-5 {
+        font-size: 1.4rem;
+        padding-top: 0rem!important
+    }
+    .left-bottom h2 {
+        display: none;
+    }
+}
+
+
+/* my-works page */
+
+.my-works {
+    justify-content: flex-start;
+    height: 90vh;
+}
+
+.portfolio {
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio .portfolio-span {
+    height: 3px;
+    width: 30rem;
+    border: 1px solid #424242;
+}
+
+.gallery {
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 3%;
+    width: 100%;
+}
+
+.gallery .pic {
+    width: 26.666666%;
+    min-height: 150px;
+    overflow: hidden;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.gallery .pic a {
+    transition: 1s;
+    filter: brightness(80%);
+}
+
+.gallery .pic a:hover {
+    transform: scale(1.1);
+    filter: brightness(100%);
+}
+
+.figure-caption {
+    width: 100%;
+}
+
+.figure-caption a {
+    color: #424242;
+    text-transform: capitalize;
+    letter-spacing: .1rem;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+@media screen and (min-width:768px) {
+    .figure-caption a {
+        letter-spacing: normal;
+    }
+    .gallery .pic {
+        min-height: 200px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .gallery {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .gallery .pic {
+        width: 50%;
+    }
+    .figure-caption {
+        margin-top: 0rem!important;
+    }
+}
+
+@media screen and (min-width:578px) and (max-width:767px) {
+    .my-works {
+        justify-content: flex-start;
+    }
+    .portfolio h2 {
+        font-size: 1.6rem;
+        letter-spacing: .6px;
+    }
+    .figure-caption a {
+        font-size: .7rem;
+        letter-spacing: normal;
+    }
+    .portfolio .portfolio-span {
+        width: 20rem;
+    }
+}
+
+@media screen and (max-width:756px) {
+    .portfolio .portfolio-span {
+        height: 2.5px;
+    }
+}
+
+@media screen and (max-width:577px) {
+    .figure-caption a {
+        padding: none;
+        font-size: .8rem;
+        letter-spacing: normal;
+    }
+    .portfolio h2 {
+        font-size: 1.3rem;
+        letter-spacing: .3px;
+    }
+    .portfolio .portfolio-span {
+        width: 20rem;
+    }
+}
+
+
+/* get in touch page */
+
+.main-get-in-touch {
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.get-in-touch {
+    background-color: #f6f6f6;
+    width: 80%;
+    height: 88vh;
+    border-radius: .5rem .5rem 0 0;
+}
+
+.contact-link {
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 40px;
+}
+
+.contact-link>a {
+    color: #424242;
+}
+
+.contact-right {
+    width: 100%;
+    height: 80vh;
+    align-items: center;
+}
+
+.contact-name {
+    width: 100%;
+    height: 40%;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: .3rem;
+    background-color: #f9f9f9;
+}
+
+.linkedin {
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+}
+
+.my-form .btn-default {
+    background-color: #305896;
+    color: #fff;
+    border-radius: 0;
+}
+
+.my-form .btn-default:hover {
+    background-color: #4498C6;
+    color: #fff;
+}
+
+.my-form .form-control {
+    border-radius: 0;
+}
+
+@media screen and (max-width:767px) {
+    .get-in-touch {
+        height: auto;
+    }
+    .contact-right {
+        height: 10vh;
+        align-items: flex-start;
+        margin-top: 2%;
+    }
+    .contact-right h1 {
+        font-size: 1.7rem;
+    }
+    .contact-right h3 {
+        font-size: 1.3rem;
+    }
+    .contact-name {
+        height: auto;
+    }
+    .contact-right h4 {
+        font-size: .8rem;
+    }
+}
